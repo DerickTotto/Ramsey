@@ -1,0 +1,73 @@
+@import url("../pages/misArchivos/misArchivos.css");
+@import url("../pages/favoritos/favoritos.css");
+@import url("../pages/areaTrabajo/areaTrabajo.css");
+@import url("../pages/archivosCompartidos/archivosCompartidos.css");
+@import url("../pages/papelera/papelera.css");
+@import url("../pages/recientes/recientes.css");
+
+.home-html{
+    background-color: #fff;
+    height: 100%;
+    width: 101%;
+    position: absolute;
+}
+.navopc{
+    width: 100%;
+    padding-right: 0%;
+    background-color: rgba(238, 238, 238, 0.658);
+    height: 100%;
+}
+.user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opcion{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: rgb(77, 77, 77);
+}
+.opcion:hover{
+    color: white;
+    background-color: rgba(0, 81, 255, 0.41);
+}
+.dataPerfil p{
+    margin-bottom: 0%;
+}
+#txtOpcion{
+    margin-bottom: 0%;
+}
+.activarOpcion{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: white;
+    background-color: rgba(0, 81, 255, 0.71);
+}
+.sec-modalNuevoOff{
+    display: none;
+}
+.sec-modalNuevoOn{
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.664);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalNuevo{
+    padding: 30px;
+    border-radius: 3px;
+    width: 400px;
+    height: 200px;
+    background-color: white;
+}
+.modalNuevo p {
+    font-size: 30px;
+}

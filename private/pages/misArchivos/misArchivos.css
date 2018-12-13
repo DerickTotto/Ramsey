@@ -1,0 +1,29 @@
+.sec-menu{
+    width: 240px;
+    height: 35px;
+    background-color: rgba(0, 153, 255, 0.863);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.opcionArchivo{
+    filter: invert(1);
+}
+.textOpcionArchivo{
+    margin: 0%;
+    color: rgba(233, 233, 233, 0.7);
+    font-size: 12px;
+}
+.sec-buscarHome{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-buscar{
+    margin-left: 10px;
+}
+.contenidoMisArchivos{
+    padding: 20px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home | Ramsey</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/fontawesome-dist/css/all.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/estilo.global.css">
+</head>
+<body>
+    <section class="home-html row">
+        <section class="navopc col-xl-2">
+            <section class="perfil" style="text-align:center;">
+                <section class="user mb-2">
+                    <img width="150px" src="../img/usuario.png" alt="">
+                    <section style="width:50px; height: 50px; display: flex; justify-content: center; align-items: center; background-color: white; border-radius: 40px; position:absolute; bottom:75%; right: 25px;;">
+                        <img width="40px" src="../img/editar.png" alt="">
+                    </section>
+                </section>
+                <section class="dataPerfil" id="dataPerfil" style="text-align:center;"></section>
+                <p><a href="editarPerfil.html" style="color:#007bff; font-size: 12px;">Editar Perfil</a></p>
+            </section>
+            <section class="opciones mt-3">
+                <section class="opcion active" id="id1" onClick="componente('id1')">
+                    <p id="txtOpcion">Mis Archivos</p>
+                </section>
+                <section class="opcion" id="id2" onClick="componente('id2')">
+                    <p id="txtOpcion">Reciente</p>
+                </section>
+                <section class="opcion" id="id3" onClick="componente('id3')">
+                    <p id="txtOpcion">Favoritos</p>
+                </section>
+                <section class="opcion" id="id4" onClick="componente('id4')">
+                    <p id="txtOpcion">Archivos Compartidos</p>
+                </section>
+                <section class="opcion" id="id5" onClick="componente('id5')">
+                    <p id="txtOpcion">Papeleria</p>
+                </section>
+                <section class="col-xl-12" style="position:absolute; padding-left: 0%; bottom:10px; display: flex; justify-content: center;" >
+                    <button class="btn btn-danger" id="btn-cerrarSesion" style="width: 100%; text-align:center;">Cerrar Sesion</button>
+                </section>
+            </section>
+        </section>
+        <section class="data col-xl-8" id="data" style="border:1px solid red; margin-left: auto; margin-right: auto;">
+            
+        </section>
+        <!--·············································································································-->
+        <!--·············································································································-->
+        <!--·············································································································-->
+        <!--·············································································································-->
+        <section class="sec-chat col-xl-2" style="border:1px solid blue;"></section>
+    </section>
+
+    <!--Modal Invisible para nuevos archivos CREADO DESDE misArchivos.js-->
+    <section class="sec-modalNuevoOff" id="sec-modalNuevo"></section>
+    
+    
+    
+    <script src="/js/jquery.min.js"></script>
+    <script src="../js/js.global.js"></script>
+    <script src="../js/home.js"></script>
+
+    <!-- Archivos js da componentes-->
+    <script src="./misArchivos/misArchivos.js"></script>
+</body>
+</html>
