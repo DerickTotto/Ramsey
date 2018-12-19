@@ -11,7 +11,7 @@ $("#btn-registrar").click(function(){
             success:function(respuesta){
                 console.log("guardarUsuario "+respuesta);
                 if(respuesta.affectedRows==1){
-                    window.location.href="/login.html";
+                    window.location.href="../login/login.html";
                 }
             },error:function(error){
                 console.log(error);
