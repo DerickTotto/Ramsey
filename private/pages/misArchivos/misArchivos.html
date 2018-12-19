@@ -1,34 +1,19 @@
-<section style="width:100%; height:100%; border:1px solid red; z-index: -1;" id="misArchivos">
-    <section class="sec-buscarHome">
+<section style="width:100%; height:90%; " id="misArchivos">
+    <section style="height:50px; height: 8%; margin-bottom: 0%;">
+        <input type="text" value="Mi Unidad/" class="form-control mt-1"  id="urlArchivos">
+    </section>
+    <section class="sec-buscarHome height: 12%;">
         <input class="form-control" style="width:60%;" type="text" placeholder="Buscar proyecto...">
         <button class="btn btn-success btn-buscar" type="button">Buscar</button>
     </section>
-    <section style="height:50px; border:1px solid blue;">Mi Unidad</section>
-    <section class="contenidoMisArchivos row" id="contenidoMisArchivos"></section>
-    <section id="menuCapa" class="dropdown-menu sec-menu" role="menu" aria-labelledby="dropdownMenu1">
-        <b><p class="textOpcionArchivo">Nuev@ &nbsp;</p></b> 
-        <i onclick="AbrirModalNuevo('C')" class="opcionArchivo fas fa-folder">&nbsp;&nbsp;</i>
-        <i onclick="AbrirModalNuevo('A')" class="opcionArchivo fas fa-file"></i>
-        <b><p class="textOpcionArchivo">&nbsp; | &nbsp; Acción &nbsp;</p></b>    
-        <i onclick="alerta('favoritos')" class="opcionArchivo fas fa-heart">&nbsp;&nbsp;</i>
-        <i onclick="alerta('borrar')" class="opcionArchivo fas fa-trash">&nbsp;&nbsp;</i>
-        <i onclick="alerta('compartir')" class="opcionArchivo fas fa-share-alt"></i>
+    <section style=" overflow-y: scroll; overflow-x: hidden; height: 80%;">
+        <section class="contenidoMisArchivos row" style="z-index: 7;" id="contenidoMisArchivos"></section>
     </section>
+    <ul id="menuCapa" class="dropdown-menu sec-menu" role="menu" aria-labelledby="dropdownMenu1">
+        
+    </ul>
 </section>
-
-<!--section class="carpetas">
-    <section class="row contenidohome" id="contenidohome" contextmenu="clickDerecho()">
-        <section class="col-xl-2 proyecto mb-4 mr-4" onClick="nuevoProyecto()">
-            <img src="./img/+.png" alt="">
-        </section>
-    </section>
-    <section class="contenidohome" id="nuevoProyecto" style="left:17%">
-        <section class="form-NP">
-            <p>Nuevo</p>
-            <input type="text" placeholder="Nombre" class="form-control" id="txtNombreArchi">
-            <input type="color" class="form-control">
-            <button class="btn btn-success" onClick="nuevo()">Nuevo</button>
-        </section>
-    </section>
-</section-->
-
+<section class="detalles" id="detalles" style="border-top:1px solid rgba(85, 85, 85, 0.521); height:9%;">
+    
+</section>
+<!--==========================================Code mirror-->

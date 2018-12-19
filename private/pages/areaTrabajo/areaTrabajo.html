@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ramsey | Editor :D</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../../lib/fontawesome-dist/css/all.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./areaTrabajo.css" />
+    <!--script src="main.js"></script-->
+    <!--Ace editor-->
+</head>
+<body>
+    <section class="contenidor">
+        <nav class="navbar">
+            <section>
+                <a class="navbar-brand" href="#">
+                    <img src="../../img/logo Ramsey.png" width="50" height="50" class="d-inline-block align-top" alt="">
+                    <img src="../../img/Texto Ramsey.svg" width="200" height="50" class="d-inline-block align-top" alt="">
+                </a>
+            </section>
+        </nav>
+        <section class="row contenedorEditor">
+            <section class="col-xl-4 sec-editor editorHtml scroll">
+                <b><p class="titulo-editor">Html<i class="fas fa-save" style="position: absolute; right: 30px; top:5px;"></i></p></b>
+                <section id="editorHtml" class="editor"></section>
+            </section>
+            <section class="col-xl-4 sec-editor editorCss scroll">
+                <b><p class="titulo-editor">Css <i class="fas fa-save" style="position: absolute; right: 30px; top:5px;"></i></p></b>
+                <section id="editorCss" class="editor"></section>
+            </section>
+            <section class="col-xl-4 sec-editor editorJs scroll">
+                <b><p class="titulo-editor">Js<i class="fas fa-save" style="position: absolute; right: 30px; top:5px;"></i></p></b>
+                <section id="editorJs" class="editor"></section>
+            </section>
+            <section class="vista col-xl-12">
+                <iframe src="" frameborder="0" id="iframe"></iframe>
+            </section>
+            
+        </section>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.2/ace.js"></script>
+        <script src="../../js/jquery.min.js"></script>
+        <script src="./areaTrabajo.js"></script>
+    </section>
+</body>
+</html>

@@ -11,9 +11,32 @@
     <link rel="stylesheet" href="../css/estilo.global.css">
 </head>
 <body>
+    <nav class="navbar">
+        <section>
+            <a class="navbar-brand" href="#">
+                <img src="../../img/logo Ramsey.png" width="50" height="50" class="d-inline-block align-top" alt="">
+                <img src="../../img/Texto Ramsey.svg" width="200" height="50" class="d-inline-block align-top" alt="">
+            </a>
+        </section>
+        <!--nav class="navbar-item dropdown ml-4">    
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img width="40px" src="../img/usuario.png" alt="">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="perfil-usuario.html">Mi perfil</a>
+                <a class="dropdown-item" href="#">Configuraciones</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" onclick="cerrarSesion()">Cerrar sesion<i class="fas fa-sign-out-alt ml-2"></i></a>
+            </div>
+        </nav-->
+        <section class="perfil" id="perfil" >
+            
+        </section>
+        
+    </nav>
     <section class="home-html row">
         <section class="navopc col-xl-2">
-            <section class="perfil" style="text-align:center;">
+            <!--section class="perfil" style="text-align:center;">
                 <section class="user mb-2">
                     <img width="150px" src="../img/usuario.png" alt="">
                     <section style="width:50px; height: 50px; display: flex; justify-content: center; align-items: center; background-color: white; border-radius: 40px; position:absolute; bottom:75%; right: 25px;;">
@@ -22,7 +45,7 @@
                 </section>
                 <section class="dataPerfil" id="dataPerfil" style="text-align:center;"></section>
                 <p><a href="editarPerfil.html" style="color:#007bff; font-size: 12px;">Editar Perfil</a></p>
-            </section>
+            </section-->
             <section class="opciones mt-3">
                 <section class="opcion active" id="id1" onClick="componente('id1')">
                     <p id="txtOpcion">Mis Archivos</p>
@@ -39,19 +62,20 @@
                 <section class="opcion" id="id5" onClick="componente('id5')">
                     <p id="txtOpcion">Papeleria</p>
                 </section>
-                <section class="col-xl-12" style="position:absolute; padding-left: 0%; bottom:10px; display: flex; justify-content: center;" >
-                    <button class="btn btn-danger" id="btn-cerrarSesion" style="width: 100%; text-align:center;">Cerrar Sesion</button>
-                </section>
+                
             </section>
         </section>
-        <section class="data col-xl-8" id="data" style="border:1px solid red; margin-left: auto; margin-right: auto;">
+        
+        <section class="data col-xl-8" id="data" onmouseup="mousedown(event)" style=" margin-left: auto; margin-right: auto; overflow: hidden;">
             
         </section>
         <!--·············································································································-->
         <!--·············································································································-->
         <!--·············································································································-->
         <!--·············································································································-->
-        <section class="sec-chat col-xl-2" style="border:1px solid blue;"></section>
+        <section class="sec-chat col-xl-2" style="border-left: 1px solid gray">
+            CHAT
+        </section>
     </section>
 
     <!--Modal Invisible para nuevos archivos CREADO DESDE misArchivos.js-->
@@ -60,10 +84,16 @@
     
     
     <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
     <script src="../js/js.global.js"></script>
-    <script src="../js/home.js"></script>
-
     <!-- Archivos js da componentes-->
     <script src="./misArchivos/misArchivos.js"></script>
+    <script src="../js/home.js"></script>
+    <script src="./miPerfil/miPerfil.js"></script>
+    
+    
+
+    
 </body>
 </html>

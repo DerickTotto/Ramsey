@@ -1,3 +1,23 @@
-<section>
-    Hola soy la papelera!
-</section>
+<section style="width:100%; height:90%; z-index:7; position:relative;" id="misArchivos">
+        <section style="height:50px; height: 8%; margin-bottom: 0%;">
+            <input type="text" value="Mi Unidad/" class="form-control mt-1"  id="urlArchivos">
+        </section>
+        <section class="sec-buscarHome height: 12%;">
+            <input class="form-control" style="width:60%;" type="text" placeholder="Buscar proyecto...">
+            <button class="btn btn-success btn-buscar" type="button">Buscar</button>
+        </section>
+        <section style=" overflow-y: scroll; overflow-x: hidden; height: 80%;">
+            <section class="contenidoMisArchivos row" style="z-index: 7;" id="contenidoMisArchivos"></section>
+        </section>
+        <ul id="menuCapa" class="dropdown-menu sec-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li onclick="AbrirModalNuevo('C')"><b><p class="textOpcionArchivo mb-2"><i class="opcionArchivo fas fa-folder">&nbsp;&nbsp;</i>Nueva carpeta &nbsp;</p></b></li>
+            <li onclick="AbrirModalNuevo('A')"><b><p class="textOpcionArchivo mb-2"><i class="opcionArchivo fas fa-file">&nbsp;&nbsp;</i>Nuevo archivo &nbsp;</p></b></li>
+            <li><hr></li>
+            <li onclick="alerta('favoritos')"><b><p class="textOpcionArchivo mb-2"><i class="opcionArchivo fas fa-heart">&nbsp;&nbsp;</i>Agregar a Favoritos &nbsp;</p></b>    </li>
+            <li onclick="alerta('borrar')"><b><p class="textOpcionArchivo mb-2"><i class="opcionArchivo fas fa-trash">&nbsp;&nbsp;</i> Mandar a Papelera &nbsp;</p></b>    </li>
+            <li onclick="alerta('compartir')"><b><p class="textOpcionArchivo mb-2"><i class="opcionArchivo fas fa-share-alt">&nbsp;&nbsp;</i> Compartir &nbsp;</p></b>    </li>
+        </ul>
+    </section>
+    <section class="detalles" id="detalles" style="border-top:1px solid rgba(85, 85, 85, 0.521); height:9%;">
+        
+    </section>

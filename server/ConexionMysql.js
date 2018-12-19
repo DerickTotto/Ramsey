@@ -30,7 +30,7 @@ function reconectar(conexion) {
     console.log('creando nueva conexion...');
     
     //se crea la nueva conexion
-    conexion = mysql.createPool(credenciales);
+    conexion = mysql.createPool(credencialesMysql);
 
     //se prueba la nueva conexion
     conexion.getConnection(function (error) {
